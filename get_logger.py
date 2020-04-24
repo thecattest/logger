@@ -17,3 +17,9 @@ if __name__ == '__main__':
     logger = get_logger("log1.log", "bot")
     logger.info("Hell o world")
     logger.error("You")
+
+    logger2 = get_logger("log2.log", "logger2")
+    logger2.info("WORKS")
+
+    logger2 = get_logger("log1.log", "logger2")
+    logger2.info("IT WORKS TOO")
